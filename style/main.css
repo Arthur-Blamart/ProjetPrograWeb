@@ -1,0 +1,19 @@
+#inputs{
+    display:flex;
+}
+#texte{
+    width: 500px;
+    resize: none;
+    border: solid 2px black;
+    font-size: 130%;
+}
+#parametres{
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+    justify-content:space-evenly;
+}
+select{
+    height: 25px;
+}

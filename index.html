@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<title>Projet Web : TTS</title>
+    	<link rel="stylesheet" type="text/css" href="./style/main.css">
+    	<script src="./script/speech.js" type="module"></script>
+  	</head>
+	<body>
+		<div id="inputs">
+			<textarea id="texte" placeholder="Entrez votre texte"></textarea>
+			<div id="parametres">
+				<p class="definer">Langue : </p>
+				<select id="languages"></select>
+				<p class="definer">Locuteur : </p>
+				<select id="voice"></select>
+				<p>Pitch : </p>
+				<input type="range" id="pitchSlider" min="-1000" max="1000" value="0">
+				<button id="resetPitch">Reset Pitch</button>
+				<p>Visualiser :</p>
+				<select id="whatToShow">
+					<option value="oscillo">Oscilloscope</option>
+					<option value="spectre">Spectrogram</option>
+				</select>
+				<p></p>
+				<button id="start">START</button>
+			</div>
+			<canvas id="visualisationCanvas" width="700" height="200">
+		</div>
+	</body>
+</html>
